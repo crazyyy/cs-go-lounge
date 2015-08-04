@@ -1,0 +1,44 @@
+@media (max-width: 1199px) {
+  .navbar-header {
+    .navbar-brand {
+      top: 15px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .header {
+    .navbar-collapse {
+      position: absolute;
+      top: 100px;
+      right: 15px;
+
+      margin: 0;
+      padding: 0;
+      .nav {
+        margin: 0;
+        padding: 0;
+        li {
+          margin: 0 15px;
+          a {
+            font-size: em(12,14);
+            font-weight: $semibold;
+
+            margin: 0;
+            padding: 0 0 3px;
+
+            text-transform: uppercase;
+
+            color: #fff;
+            border: 0;
+            border-bottom: 2px solid transparent;
+            &:hover,
+            &:focus {
+              border-color: #fff;
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}
