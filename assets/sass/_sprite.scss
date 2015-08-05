@@ -11,22 +11,33 @@ $icon-home: x y offset_x offset_y width height total_width total_height image_pa
 At the bottom of this section, we provide information about the spritesheet itself
 $spritesheet: width height image $spritesheet-sprites;
 */
-$sprite-logo-name: 'sprite-logo';
-$sprite-logo-x: 0px;
-$sprite-logo-y: 0px;
-$sprite-logo-offset-x: 0px;
-$sprite-logo-offset-y: 0px;
-$sprite-logo-width: 512px;
-$sprite-logo-height: 512px;
-$sprite-logo-total-width: 512px;
-$sprite-logo-total-height: 512px;
-$sprite-logo-image: '../img/sprite.png';
-$sprite-logo: (0px, 0px, 0px, 0px, 512px, 512px, 512px, 512px, '../img/sprite.png', 'sprite-logo', );
-$spritesheet-width: 512px;
-$spritesheet-height: 512px;
+$sprite-country-ru-name: 'sprite-country-ru';
+$sprite-country-ru-x: 0px;
+$sprite-country-ru-y: 0px;
+$sprite-country-ru-offset-x: 0px;
+$sprite-country-ru-offset-y: 0px;
+$sprite-country-ru-width: 20px;
+$sprite-country-ru-height: 14px;
+$sprite-country-ru-total-width: 40px;
+$sprite-country-ru-total-height: 14px;
+$sprite-country-ru-image: '../img/sprite.png';
+$sprite-country-ru: (0px, 0px, 0px, 0px, 20px, 14px, 40px, 14px, '../img/sprite.png', 'sprite-country-ru', );
+$sprite-country-ua-name: 'sprite-country-ua';
+$sprite-country-ua-x: 20px;
+$sprite-country-ua-y: 0px;
+$sprite-country-ua-offset-x: -20px;
+$sprite-country-ua-offset-y: 0px;
+$sprite-country-ua-width: 20px;
+$sprite-country-ua-height: 14px;
+$sprite-country-ua-total-width: 40px;
+$sprite-country-ua-total-height: 14px;
+$sprite-country-ua-image: '../img/sprite.png';
+$sprite-country-ua: (20px, 0px, -20px, 0px, 20px, 14px, 40px, 14px, '../img/sprite.png', 'sprite-country-ua', );
+$spritesheet-width: 40px;
+$spritesheet-height: 14px;
 $spritesheet-image: '../img/sprite.png';
-$spritesheet-sprites: ($sprite-logo, );
-$spritesheet: (512px, 512px, '../img/sprite.png', $spritesheet-sprites, );
+$spritesheet-sprites: ($sprite-country-ru, $sprite-country-ua, );
+$spritesheet: (40px, 14px, '../img/sprite.png', $spritesheet-sprites, );
 
 /*
 The provided mixins are intended to be used with the array-like variables

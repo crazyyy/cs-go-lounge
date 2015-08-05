@@ -25,8 +25,8 @@ $base-z-index: 0;
 $darkblue: #071c2d;
 $blue: #263238;
 $lightblue: #33818d;
-$gray: #333333;
-$lightgray: #777777;
+$gray: #333;
+$lightgray: #777;
 $orange: #ffc107;
 
 
@@ -41,8 +41,8 @@ $base-border: 1px solid $base-border-color;
 // Background Colors
 $base-background-color: #fff;
 $secondary-background-color: tint($base-border-color, 75%);
-
-$base-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+$base-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .14);
+$action-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .50);
 
 // Forms
 $form-box-shadow: $base-box-shadow;
@@ -52,4 +52,4 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $l
 $trs: all .15s;
 $base-duration: 150ms;
 $base-timing: ease;
-$base-transition: background-color $base-duration * 5 $base-timing, color $base-duration * 0.7 $base-timing, opacity $base-duration * 0.3 $base-timing;
+$base-transition: background-color $base-duration * 5 $base-timing, color $base-duration * .7 $base-timing, opacity $base-duration * .3 $base-timing;

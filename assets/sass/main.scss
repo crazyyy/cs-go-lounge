@@ -66,7 +66,8 @@ picture {
   margin: 0;
 }
 .title14,
-.title16 {
+.title16,
+.title16w {
   font-weight: normal;
 
   margin: 0;
@@ -78,8 +79,12 @@ picture {
 .title14 {
   font-size: em(14, 14);
 }
-.title16 {
+.title16,
+.title16w {
   font-size: em(16, 14);
+}
+.title16w {
+  color: #fff;
 }
 .postdata {
   font-size: em(12, 14);
@@ -294,6 +299,9 @@ picture {
       position: absolute;
       top: -25px;
       left: 0;
+    }
+    &:hover {
+      box-shadow: $action-box-shadow;
     }
   }
   .interesting {
@@ -579,6 +587,9 @@ picture {
 
       background-color: #fff;
       box-shadow: $base-box-shadow;
+      &:hover {
+        box-shadow: $action-box-shadow;
+      }
     }
     img {
       width: 100%;
@@ -619,11 +630,101 @@ picture {
     ul {
       display: block;
 
+      margin: 0;
+      padding: 20px;
+
       background-color: #fff;
+      box-shadow: $base-box-shadow;
+      li {
+        position: relative;
+
+        margin: 0 0 12px;
+        padding: 0 0 0 25px;
+        &:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+
+          @extend .dblock;
+        }
+        h4,
+        h5 {
+          font-size: em(12, 14);
+        }
+        h4 {
+          font-weight: $semibold;
+
+          color: $gray;
+        }
+        h5 {
+          font-weight: $light;
+
+          color: $lightgray;
+        }
+        &.country-ru {
+          &:before {
+            @include sprite($sprite-country-ru);
+          }
+        }
+        &.country-ua {
+          &:before {
+            @include sprite($sprite-country-ua);
+          }
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .block-moovers {
+    position: relative;
+    .title16 {
+      position: absolute;
+      top: -40px;
+      left: 15px;
+    }
+    .inner {
+      display: block;
+
+      margin-bottom: 15px;
+
+      text-decoration: none;
+
+      background-color: #fff;
+      box-shadow: $base-box-shadow;
+      h5 {
+        font-size: em(12, 14);
+
+        padding: 10px;
+
+        color: $gray;
+      }
+      &:hover {
+        box-shadow: $action-box-shadow;
+      }
     }
   }
 }
+.seo-content {
+  padding-top: 50px;
+  .title16 {
+    margin-bottom: 15px;
+  }
+  .seo-content-block {
+    font-size: em(12, 14);
 
+    margin-bottom: 70px;
+
+    color: $lightgray;
+
+    column-count: 2;
+    column-gap: 30px;
+    p {
+      line-height: $heading-line-height;
+    }
+  }
+}
 
 
 
@@ -651,6 +752,30 @@ picture {
       margin: 0;
 
       color: #fff;
+    }
+  }
+  .container {
+    padding-top: 170px;
+  }
+  .block-logo {
+    font-style: italic;
+    line-height: $heading-line-height;
+
+    color: #fff;
+  }
+  .block-navi,
+  .block-links {
+    position: relative;
+    .title16w {
+      position: absolute;
+      top: -40px;
+    }
+  }
+  .block-navi {
+    .nav-pills {
+      li {
+        min-width: 100px;
+      }
     }
   }
 }
