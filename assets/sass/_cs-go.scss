@@ -3,11 +3,11 @@
   font-weight: normal;
   font-style: normal;
 
-  src: url('../fonts/cs-go.eot?4571546');
-  src: url('../fonts/cs-go.eot?4571546#iefix') format('embedded-opentype'),
-  url('../fonts/cs-go.woff?4571546') format('woff'),
-  url('../fonts/cs-go.ttf?4571546') format('truetype'),
-  url('../fonts/cs-go.svg?4571546#cs-go') format('svg');
+  src: url('../fonts/cs-go.eot?83029775');
+  src: url('../fonts/cs-go.eot?83029775#iefix') format('embedded-opentype'),
+  url('../fonts/cs-go.woff?83029775') format('woff'),
+  url('../fonts/cs-go.ttf?83029775') format('truetype'),
+  url('../fonts/cs-go.svg?83029775#cs-go') format('svg');
 }
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'cs-go';
-    src: url('../font/cs-go.svg?4571546#cs-go') format('svg');
+    src: url('../font/cs-go.svg?83029775#cs-go') format('svg');
   }
 }
 */
@@ -62,7 +62,7 @@
 .icon-right-big:before {
   content: '\e802';
 } /* '' */
-.icon-thumbs-up:before {
+.icon-menu:before {
   content: '\e803';
 } /* '' */
 .icon-wechat:before {
@@ -80,8 +80,21 @@
 .icon-fire:before {
   content: '\e808';
 } /* '' */
+.icon-search:before {
+  content: '\e809';
+} /* '' */
 .icon-discount:before {
   content: '\e80a';
 } /* '' */
-
-@import 'font-cs-go/cs-go-codes';
+.icon-thumbs-up-1:before {
+  content: '\e80b';
+} /* '' */
+.icon-play-circled:before {
+  content: '\e80c';
+} /* '' */
+.icon-play-circled-1:before {
+  content: '\e80d';
+} /* '' */
+.icon-play:before {
+  content: '\e80e';
+} /* '' */

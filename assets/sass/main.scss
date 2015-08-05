@@ -483,14 +483,25 @@ picture {
   }
   .forum-popular,
   .forum-newpost {
-    margin: 0 0 20px;
-    @extend .title14;
+    .popular-title,
+    .newpost-title {
+      margin: 0 0 20px;
 
+      @extend .title14;
+      i {
+        font-size: em(20, 16);
+      }
+    }
   }
   .forum-popular {
     padding: 0 0 0 15px;
     .title16 {
       left: 15px;
+    }
+    .popular-title {
+      i {
+        color: #f44336;
+      }
     }
     .inner {
       padding: 15px 15px 15px 0;
