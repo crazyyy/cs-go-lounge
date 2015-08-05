@@ -5,6 +5,7 @@
 @import 'import/wordpress.scss';
 @import 'sprite';
 @import 'font_opensans';
+@import 'cs-go';
 
 body {
   font-family: $base-font-family;
@@ -64,13 +65,40 @@ picture {
   max-width: 100%;
   margin: 0;
 }
+.title14,
 .title16 {
-  font-size: em(16, 14);
   font-weight: normal;
 
   margin: 0;
 
+  text-transform: uppercase;
+
   color: $darkblue;
+}
+.title14 {
+  font-size: em(14, 14);
+}
+.title16 {
+  font-size: em(16, 14);
+}
+.postdata {
+  font-size: em(12, 14);
+
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: $darkblue;
+  .date,
+  .likes {
+    margin-right: 12px;
+  }
+  .likes,
+  .comments {
+    i {
+      margin-right: 5px;
+    }
+  }
 }
 .btn {
   display: inline-block;
@@ -344,6 +372,8 @@ picture {
       left: auto;
 
       margin: 0 0 10px;
+
+      text-transform: none;
       a {
         text-decoration: underline;
 
@@ -392,7 +422,81 @@ picture {
     }
   }
 }
+.main-block-middle {
+  .container {
+    position: relative;
 
+    padding: 70px 15px 0;
+
+    background-color: red;
+  }
+  .title16 {
+    position: absolute;
+    top: -25px;
+    left: 0;
+
+    margin-bottom: 5px;
+  }
+  .last-guides,
+  .forum-popular {
+    .inner {
+      background-color: #fff;
+    }
+  }
+  .last-guides {
+    padding: 0 15px 0 0;
+    .inner {
+      padding-right: 0;
+    }
+    li {
+      position: relative;
+
+      display: block;
+
+      height: 105px;
+      margin: 0 0 15px;
+      padding: 5px 10px 0 160px;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 145px;
+        height: 100%;
+      }
+      .title14 {
+        margin-bottom: 2px;
+      }
+      p {
+        font-size: em(12, 14);
+
+        left: 1.5;
+
+        color: $gray;
+      }
+      a {
+        text-decoration: none;
+
+        color: $darkblue;
+      }
+    }
+  }
+  .forum-popular,
+  .forum-newpost {
+    margin: 0 0 20px;
+    @extend .title14;
+
+  }
+  .forum-popular {
+    padding: 0 0 0 15px;
+    .title16 {
+      left: 15px;
+    }
+    .inner {
+      padding: 15px 15px 15px 0;
+    }
+  }
+}
 
 
 
