@@ -94,9 +94,12 @@ picture {
     margin-right: 12px;
   }
   .likes,
-  .comments {
+  .comments,
+  .author {
     i {
       margin-right: 5px;
+
+      color: $lightgray;
     }
   }
 }
@@ -427,8 +430,6 @@ picture {
     position: relative;
 
     padding: 70px 15px 0;
-
-    background-color: red;
   }
   .title16 {
     position: absolute;
@@ -438,16 +439,17 @@ picture {
     margin-bottom: 5px;
   }
   .last-guides,
-  .forum-popular {
+  .forum-popular,
+  .forum-newpost {
     .inner {
+      height: 370px;
+      padding: 15px 15px 0;
+
       background-color: #fff;
     }
   }
   .last-guides {
     padding: 0 15px 0 0;
-    .inner {
-      padding-right: 0;
-    }
     li {
       position: relative;
 
@@ -490,6 +492,8 @@ picture {
       @extend .title14;
       i {
         font-size: em(20, 16);
+
+        margin-right: 5px;
       }
     }
   }
@@ -503,12 +507,122 @@ picture {
         color: #f44336;
       }
     }
-    .inner {
-      padding: 15px 15px 15px 0;
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        font-size: em(12, 14);
+        font-weight: $semibold;
+
+        margin: 0 0 10px 15px;
+        padding: 0;
+
+        color: $gray;
+        span {
+          font-weight: $light;
+
+          display: block;
+
+          padding-top: 3px;
+        }
+      }
+    }
+  }
+  .forum-newpost {
+    padding: 0;
+    .newpost-title {
+      i {
+        color: #1d82d2;
+      }
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        margin: 0 0 20px;
+        padding: 0;
+        a {
+          font-size: em(12, 14);
+
+          color: $gray;
+          &:hover {
+            text-decoration: none;
+
+            color: $orange;
+          }
+        }
+        .postdata {
+          font-weight: $light;
+
+          padding-top: 5px;
+          .date {
+            margin-right: 0;
+          }
+        }
+      }
     }
   }
 }
 
+.main-streams {
+  padding: 40px 0 0;
+  .title16 {
+    margin-bottom: 5px;
+    padding-left: 15px;
+  }
+  .main-streams-container {
+    padding-bottom: 10px;
+    .inner {
+      display: block;
+
+      height: 250px;
+
+      background-color: #fff;
+      box-shadow: $base-box-shadow;
+    }
+    img {
+      width: 100%;
+      margin: 0 0 10px;
+    }
+    a {
+      text-decoration: none;
+
+      color: $darkblue;
+    }
+    h4,
+    h5 {
+      margin: 0;
+      margin-bottom: 10px;
+      padding-left: 15px;
+    }
+    h4 {
+      font-size: em(12, 14);
+
+      @extend .title16;
+    }
+    h5 {
+      font-size: em(12, 14);
+
+      color: $lightgray;
+    }
+  }
+}
+.main-block-bottom {
+  padding-top: 70px;
+  .block-servers {
+    position: relative;
+    .title16 {
+      position: absolute;
+      top: -40px;
+      left: 15px;
+    }
+    ul {
+      display: block;
+
+      background-color: #fff;
+    }
+  }
+}
 
 
 
