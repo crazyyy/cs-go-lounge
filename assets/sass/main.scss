@@ -815,7 +815,35 @@ picture {
 
   }
 }
+.page404 {
+  height: 540px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-image: url(../img/bg/page404.jpg);
+  padding-top: 80px;
+  h3 {
+font-size: em(72, 14);
+color: $darkblue;
+font-weight: $semibold;
+margin-bottom: 25px;
+  }
+  h4 {
+margin-bottom: 30px;
+color: $red;
+font-size: em(30, 14);
+font-weight: $semibold;
+  }
+  p {
+color: $blue;
+font-size: 1em;
+line-height: 1.5;
+margin-bottom: 50px;
+  }
+  .btn-404-to-home {
 
+  }
+}
 
 
 
